@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megan-rose/hn-Megan.git"
+  },
+  "author": "megan-rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/megan-rose/hn-Megan/issues"
+  },
+  "homepage": "https://github.com/megan-rose/hn-Megan#readme",
+  "engines": {
+    "node": "4.1.1"
+  }
+}
