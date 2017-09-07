@@ -1,14 +1,7 @@
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello Megan.\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
+language: node_js
+deploy:
+  provider: heroku
+  app:
+    master: majestic-staging
+  api_key:
+    secure: 6GcGX2XIoHYuNPiaWzlG9lks7B4l+6QUEE7fAjOtfdPItZHZhOo/PSdbvFlHlmhULRXMJ86J2wCsqsjN5ivtyddm8KgMYng8A7BeEXj2VPTkfLihaZX7fP/FXwlhVP4DGOp0aHZhZibG5F21wXyYRfsSV1mWQtEFR6gFwNfxqWT6bWOSnaIwmJ26Y97sxyhQhlijOyOxkMtGpKADHh3M7BC4Tk3PTst02pRufKvL316QpmuRNEm4CDBM2DoJd7YjiOkQRGaCDh4z912pLv1TDTadDUuNXz8VPJfNo6MYWCeozl55OOQ50Jt4unyWi8HQ16ZZchVBj4WWWjpJH9NmQb9b4sx2cT+MOEbt/AyB1VBFFpggaJHV+0iLCD2Qo8ZwtK+0FSwiEMc7mP0K32NWBhRRiR2fOWnHp+3G2bKDG74kNpVwdN9yX6RbZvvCyckMgnXXUyNeEIdlCueJRpc48M7T6M3Id/N+ztnuoHa5NxEB8ZdjulpJTi+iZy5tIp0pH0hm+A5ziVfPkhRZvVw+RknFN1zs9q8VjWrwHdEiPZPLad99PoWUYmS6RrAlhUGrowae3XEK7e7saBA+hLY3nvgL43uk2i9tdklqVaTRXCI6C4XTKbYFCrxX12v2mqYqAthmvFlCdGiJbvSsuOh4hQHJBAjQWtwjY0wdaYY6g8g=
